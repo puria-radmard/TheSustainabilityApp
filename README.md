@@ -6,7 +6,7 @@ Puria
 Mohamed
 Marcos
 Zhexuan
-Evonn
+Evonne
 Omar
 Ricky
 
