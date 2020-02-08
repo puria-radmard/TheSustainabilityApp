@@ -5,7 +5,7 @@ Users:
 Puria
 Mohamed
 Marcos
-Zhexun
+Zhexuan
 Evonn
 Omar
 Ricky
