@@ -5,10 +5,9 @@ Users:
 Puria
 Mohamed
 Marcos
-Zhexun
-Evonn
+Zhexuan
+Evonne
 Omar
 Ricky
 
 lil edit
-bro
