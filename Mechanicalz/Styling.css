@@ -1,0 +1,27 @@
+body {
+    background-color: skyblue;
+}
+
+h1 {
+    color: red;
+}
+
+h2 {
+    color: royalblue;
+}
+
+h3 {
+    color: seagreen;
+}
+
+p {
+    color: slateblue;
+}
+
+#firstid {
+    color: tomato;
+}
+
+#title {
+    font-family: 'Avenir';
+}
