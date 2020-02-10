@@ -22,3 +22,26 @@
     font-family: 'Avenir';
     text-align: center;
 }
+
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+/* Bottom right text */
+.text-block {
+    position: absolute;
+    /* position: relative; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: black; */
+    color: black;
+    font-size: 5pc;
+    font-family: 'Avenir';
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
