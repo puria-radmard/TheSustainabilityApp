@@ -45,3 +45,32 @@
     padding-left: 10px;
     padding-right: 10px;
 }
+
+/* hotizontal positioning of objects */
+.inlineBlock {
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+}
+
+/* Any div object that is inside an .inlineBlock instance */
+.inlineBlock div {
+    display: inline-block;
+    padding: 50px;
+    border: 1px red solid;
+}
+
+/* Navigation bar */
+.nav {
+    background-color: gray; 
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* any nav li object that is indide a .nav instance */
+.nav li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+}
