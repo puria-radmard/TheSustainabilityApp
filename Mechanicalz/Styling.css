@@ -19,6 +19,7 @@ body {
     overflow: hidden;
     top: 0px;
     left: 0;
+    border-bottom: 1px solid rgba(150, 150, 150, 0.5); /* can specify the spacing*/
 }
 
 /* Title text in the middle of an imageContainer */
