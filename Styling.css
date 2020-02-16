@@ -2,93 +2,132 @@
 
 /* Get rid of the edge spacing on the website */
 body {
-  margin: 0;
-  padding: 0;
-}
-
-#theme {
-    background-color: black;
-    color: rgba(200, 200, 200, 1.0);
-}
-
-/* Navigation bar */
-.navBar {
-    position: fixed; /* always show at the top */
-    
-    padding-right: 10%;
-    padding-left: 10%;
-    width: 80%;
-    top: 0;
-    left: 0;
-    height: 50px;
-    background-color: rgba(255.0, 255.0, 255.0, 0.7);
-    z-index: 1;
-    
-    display: table;
-    table-layout: fixed; /* space evenly */
-}
-
-/* for all the list elements in nav bar */
-.navBar li {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    font-family: 'Avenir';
-}
-
-/* link element inside nav bar */
-.navBar li.link {
-    font-size: 20px;
-    /* background-color: red; */
-}
-
-/* divider inside nav bar */
-.navBar li.divider {
-    font-size: 30px;
-    width: 10px;
-    color: rgba(0, 0, 0, 0.1);
-    /* background-color: white; */
-}
-
-/* Container holding the image and the text */
-.imageContainer {
-    position: relative;
-    max-height: 100%;
-    width: 100%;
-    overflow: hidden;
-    top: 0px;
-    left: 0;
-    border-bottom: 1px solid rgba(150, 150, 150, 0.5); /* can specify the spacing*/
-}
-
-/* Title text in the middle of an imageContainer */
-.imageContainer .titleOnImage {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;
-    text-align: center;
-    vertical-align: middle;
-    transform: translate(0%, -50%);
-    color: black;
-    font-size: 5pc;
-    font-family: 'Avenir';
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    /* background-color: red; */
-}
-
-/* hotizontal positioning of objects */
-.inlineBlock {
-    margin-top: 10px;
-    color: white;
-    text-align: center;
-}
-
-/* Any div object that is inside an .inlineBlock instance */
-.inlineBlock div {
-    display: inline-block;
-    padding: 50px;
-    border: 1px red solid;
-}
+    margin: 0;
+    padding: 0;
+  }
+  
+  #theme {
+      background-color: black;
+      color: rgba(200, 200, 200, 1.0);
+  }
+  
+  /* Navigation bar */
+  .navBar {
+      position: fixed; /* always show at the top */
+      padding-right: 10%;
+      padding-left: 10%;
+      width: 80%;
+      top: 0;
+      left: 0;
+      bottom: 10;
+      height: 20px;
+      background-color: rgb(196, 194, 194); /* Gray */
+      z-index: 1;
+      
+      display: table;
+      table-layout: fixed; /* space evenly */
+  }
+  
+  /* for all the list elements in nav bar */
+  .navBar li {
+      display: table-cell;
+      vertical-align: middle;
+      background-color: rgb(196, 194, 194); /* Gray */
+      border: none;
+      color: white;
+      padding: 12px 18px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 12px;
+      font: 1em georgia;
+  }
+  
+  /* link element inside nav bar */
+  .navBar li.link {
+      font-size: 20px;
+      text-decoration-line: none;
+      transition-duration:0.4s;
+  }
+  
+  .navBar li.link:hover{
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      border-color: whitesmoke;
+  }
+  
+  /* divider inside nav bar */
+  .navBar li.divider {
+      font-size: 30px;
+      width: 10px;
+      color: rgba(0, 0, 0, 0.1);
+      /* background-color: white; */
+  }
+  
+  /* Container holding the image and the text */
+  .imageContainer {
+      position: relative;
+      max-height: 100%;
+      width: 100%;
+      overflow: hidden;
+      top: 0px;
+      left: 0;
+      border-bottom: 1px solid rgba(150, 150, 150, 0.5); /* can specify the spacing*/
+  }
+  
+  /* Title text in the middle of an imageContainer */
+  .imageContainer .titleOnImage {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      text-align: center;
+      vertical-align: middle;
+      transform: translate(0%, -50%);
+      color: black;
+      font-size: 5pc;
+      font-family: 'Courier';
+      text-align: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      /* background-color: red; */
+  }
+  
+  /* hotizontal positioning of objects */
+  .inlineBlock {
+      margin-top: 10px;
+      color: white;
+      text-align: center;
+  }
+  
+  /* Any div object that is inside an .inlineBlock instance */
+  .inlineBlock div {
+      display: inline-block;
+      padding: 50px;
+      border: 1px red solid;
+  }
+  
+  button {
+      background-color: rgb(255, 0, 0); /* Green */
+      border: none;
+      color: white;
+      padding: 12px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 12px;
+      font: 1em georgia;
+      transition-duration: 0.4s;
+    }
+  
+  button:hover{
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  
+  
+  
+  
