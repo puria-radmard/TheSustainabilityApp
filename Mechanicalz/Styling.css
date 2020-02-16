@@ -6,6 +6,11 @@ body {
   padding: 0;
 }
 
+#theme {
+    background-color: black;
+    color: rgba(200, 200, 200, 1.0);
+}
+
 /* Container holding the image and the text */
 .imageContainer {
     position: relative;
@@ -51,39 +56,38 @@ body {
 
 /* Navigation bar */
 .navBar {
-    position: fixed;
-    width:100%;
+    position: fixed; /* always show at the top */
+    
+    padding-right: 10%;
+    padding-left: 10%;
+    width: 80%;
     top: 0;
     left: 0;
     height: 50px;
     background-color: rgba(255.0, 255.0, 255.0, 0.7);
     z-index: 1;
-    text-align: center;
+    
+    display: table;
+    table-layout: fixed; /* space evenly */
 }
 
-/* List inside a navBar */
 .navBar li {
-    display: inline-block;
-    font-size: 20px;
-    padding: 20px;
-    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
     font-family: 'Avenir';
 }
 
-
-#theme1 {
-    /* background-color: rgba(30, 30, 30, 1.0); */
-    /* color: rgba(200, 200, 200, 1.0); */
-    background-color: royalblue;
-    color: black;
+/* List inside a navBar */
+.navBar li.link {
+    font-size: 20px;
+    /* background-color: red; */
 }
 
-#dark {
-    background-color: black;
-    color: rgba(200, 200, 200, 1.0);
+.navBar li.divider {
+    font-size: 30px;
+    width: 10px;
+    color: rgba(0, 0, 0, 0.1);
+    /* background-color: white; */
 }
 
-#light {
-    background-color: rgba(200, 200, 200, 1.0);
-    color: black; 
-}
