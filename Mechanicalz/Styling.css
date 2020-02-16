@@ -11,6 +11,45 @@ body {
     color: rgba(200, 200, 200, 1.0);
 }
 
+/* Navigation bar */
+.navBar {
+    position: fixed; /* always show at the top */
+    
+    padding-right: 10%;
+    padding-left: 10%;
+    width: 80%;
+    top: 0;
+    left: 0;
+    height: 50px;
+    background-color: rgba(255.0, 255.0, 255.0, 0.7);
+    z-index: 1;
+    
+    display: table;
+    table-layout: fixed; /* space evenly */
+}
+
+/* for all the list elements in nav bar */
+.navBar li {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'Avenir';
+}
+
+/* link element inside nav bar */
+.navBar li.link {
+    font-size: 20px;
+    /* background-color: red; */
+}
+
+/* divider inside nav bar */
+.navBar li.divider {
+    font-size: 30px;
+    width: 10px;
+    color: rgba(0, 0, 0, 0.1);
+    /* background-color: white; */
+}
+
 /* Container holding the image and the text */
 .imageContainer {
     position: relative;
@@ -52,43 +91,5 @@ body {
     display: inline-block;
     padding: 50px;
     border: 1px red solid;
-}
-
-
-/* Navigation bar */
-.navBar {
-    position: fixed; /* always show at the top */
-    
-    padding-right: 10%;
-    padding-left: 10%;
-    width: 80%;
-    top: 0;
-    left: 0;
-    height: 50px;
-    background-color: rgba(255.0, 255.0, 255.0, 0.7);
-    z-index: 1;
-    
-    display: table;
-    table-layout: fixed; /* space evenly */
-}
-
-.navBar li {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    font-family: 'Avenir';
-}
-
-/* List inside a navBar */
-.navBar li.link {
-    font-size: 20px;
-    /* background-color: red; */
-}
-
-.navBar li.divider {
-    font-size: 30px;
-    width: 10px;
-    color: rgba(0, 0, 0, 0.1);
-    /* background-color: white; */
 }
 
