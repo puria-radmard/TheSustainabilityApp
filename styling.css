@@ -2,124 +2,129 @@
 
 /* Get rid of the edge spacing on the website */
 body {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #theme {
+      background-color: black;
+      color: rgba(200, 200, 200, 1.0);
+  }
+  
+  /* Navigation bar */
+  .navBar {
+      position: fixed; /* always show at the top */
+      width: 100%;
+      height: 5vmin;
+      background-color: rgb(196, 194, 194); /* Gray */
+      z-index: 1;
+      display: table;
+      table-layout: fixed; /* space evenly */
+  }
+  
+  /* for all the list elements in nav bar */
+  .navBar li {
+      display: table-cell;
+      vertical-align: middle;
+      background-color: rgb(196, 194, 194); /* Gray */
+  }
+  a{
+    text-decoration : none; 
+    color :black;
+  }
+  /* link element inside nav bar */
+  .navBar li.link {
+      font-size: 3vmin;
+      transition-duration:0.4s;
+      border: none;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      margin: 1vmin 0.2vmin;
+      cursor: pointer;
+      border-radius: 1vmax;
+      font: 1em georgia;
+  }
+  
+  .navBar li.link:hover{
+      box-shadow: 0 1vmax 1.25vmax 0 rgba(0,0,0,0.24), 0 1.33vmax 3.9vmax 0 rgba(0,0,0,0.19);
+      border-color: white;
+  }
+  
+  /* divider inside nav bar */
+  .navBar li.divider {
+      font-size: 2.4vmax;
+      width: 1vmax;
+      color: rgba(0, 0, 0, 0.1);
+      /* background-color: white; */
+  }
+  
+  /* Container holding the image and the text */
+  .imageContainer {
+      position: relative;
+      max-height: 100%;
+      width: 100%;
+      overflow: hidden;
+      top: 0vmax;
+      left: 0;
+      border-bottom: 0.2vmin solid rgba(150, 150, 150, 0.5); /* can specify the spacing*/
+  }
+  
+  /* Title text in the middle of an imageContainer */
+  .imageContainer .titleOnImage {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      text-align: center;
+      vertical-align: middle;
+      transform: translate(0%, -50%);
+      color: black;
+      font-size: 5pc;
+      font-family: 'Courier';
+      text-align: center;
+      padding-left: 1.5vmax;
+      padding-right: 1.5vmax;
+      /* background-color: red; */
+  }
+  
+  /* hotizontal positioning of objects */
+  .inlineBlock {
+      margin-top: 1vmax;
+      color: white;
+      text-align: center;
+  }
+  
+  /* Any div object that is inside an .inlineBlock instance */
+  .inlineBlock div {
+      display: inline-block;
+      padding: 3.9vmax;
+      border: 0.2vmin red solid;
+  }
+  
+  button {
+      background-color: rgb(255, 0, 0); /* Green */
+      border: none;
+      color: white;
+      padding: 1vmax 1.6vmin;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1.25vmax;
+      margin: 1vmin 0.4vmin;
+      cursor: pointer;
+      border-radius: 1vmax;
+      font: 1em georgia;
+      transition-duration: 0.4s;
+    }
+  
+  button:hover{
+    box-shadow: 0 1vmax 1.25vmax 0 rgba(0,0,0,0.24), 0 1.33vmax 3.9vmax 0 rgba(0,0,0,0.19);
 }
-
-* {box-sizing:border-box}
-
-#theme {
-    background-color: black;
-    color: rgba(200, 200, 200, 1.0);
-}
-
-/* Navigation bar */
-.navBar {
-    position: fixed; /* always show at the top */
-    
-    padding-right: 10%;
-    padding-left: 10%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    height: 50px;
-    background-color: rgba(255.0, 255.0, 255.0, 0.7);
-    z-index: 1;
-    
-    display: table;
-    table-layout: fixed; /* space evenly */
-}
-
-/* for all the list elements in nav bar */
-.navBar li {
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    font-family: 'Avenir';
-}
-
-/* link element inside nav bar */
-.navBar li.link {
-    font-size: 20px;
-    /* background-color: red; */
-}
-
-/* divider inside nav bar */
-.navBar li.divider {
-    font-size: 30px;
-    width: 10px;
-    color: rgba(0, 0, 0, 0.1);
-    /* background-color: white; */
-}
-
-/* Container holding the image and the text */
-.imageContainer {
-    position: relative;
-    max-height: 100%;
-    width: 100%;
-    overflow: hidden;
-    top: 0px;
-    left: 0;
-    border-bottom: 1px solid rgba(150, 150, 150, 0.5); /* can specify the spacing*/
-}
-
-/* Title text in the middle of an imageContainer */
-.imageContainer .titleOnImage {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;
-    text-align: center;
-    vertical-align: middle;
-    transform: translate(0%, -50%);
-    color: black;
-    font-size: 5pc;
-    font-family: 'Avenir';
-    text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    /* background-color: red; */
-}
-
-/* hotizontal positioning of objects */
-.inlineBlock {
-    margin-top: 10px;
-    color: white;
-    text-align: center;
-}
-
-/* Any div object that is inside an .inlineBlock instance */
-.inlineBlock div {
-    display: inline-block;
-    padding: 50px;
-    border: 1px red solid;
-}
-
-button {
-    background-color: rgb(255, 0, 0); /* Green */
-    border: none;
-    color: white;
-    padding: 12px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px;
-    font: 1em georgia;
-    transition-duration: 0.4s;
-}
-
-button:hover{
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 78vmax;
     position: relative;
     margin: auto;
 }
@@ -135,20 +140,20 @@ button:hover{
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
-    padding: 16px;
+    margin-top: -2vmax;
+    padding: 1.25vmax;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 1.4vmax;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 0 0.6vmin 0.6vmin 0;
     user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    border-radius: 0.6vmin 0 0 0.6vmin;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -159,10 +164,10 @@ button:hover{
 /* Caption text */
 .text {
     color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
+    font-size: 2.6vmin;
+    padding: 1.4vmin 1vmax;
     position: absolute;
-    bottom: 8px;
+    bottom: 1.4vmin;
     width: 100%;
     text-align: center;
 }
@@ -170,8 +175,8 @@ button:hover{
 /* Number text (1/3 etc) */
 .numbertext {
     color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
+    font-size: 1vmax;
+    padding: 1.4vmin 1vmax;
     position: absolute;
     top: 0;
 }
@@ -181,7 +186,7 @@ button:hover{
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 2px;
+    margin: 0 0.2vmin;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
@@ -213,7 +218,7 @@ button:hover{
 /* The actual timeline (the vertical ruler) */
 .timeline {
     position: relative;
-    max-width: 1200px;
+    max-width: 100vmax;
     margin: 0 auto;
 }
 
@@ -221,17 +226,17 @@ button:hover{
 .timeline::after {
     content: '';
     position: absolute;
-    width: 20px;
+    width: 3.5vmin;
     background-color: #f8f8f8;
     top: 0;
     bottom: 0;
     left: 50%;
-    margin-left: -10px;
+    margin-left: -0.9vmax;
 }
 
 /* Container around content */
 .container {
-    padding: 10px 40px;
+    padding: 0.9vmax 3.125vmax;
     position: relative;
     background-color: inherit;
     width: 50%;
@@ -241,12 +246,12 @@ button:hover{
 .container::after {
     content: '';
     position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -17px;
+    width: 2vmax;
+    height: 2vmax;
+    right: -1.3vmax;
     background-color: white;
-    border: 4px solid #FF9F55;
-    top: 15px;
+    border: 0.8vmin solid #FF9F55;
+    top: 1.2vmax;
     border-radius: 50%;
     z-index: 1;
 }
@@ -266,12 +271,12 @@ button:hover{
     content: " ";
     height: 0;
     position: absolute;
-    top: 22px;
+    top: 1.7vmax;
     width: 0;
     z-index: 1;
-    right: 30px;
+    right: 2.3vmax;
     border: medium solid white;
-    border-width: 10px 0 10px 10px;
+    border-width: 0.9vmax 0 0.9vmax 0.9vmax;
     border-color: transparent transparent transparent white;
 }
 
@@ -280,53 +285,53 @@ button:hover{
     content: " ";
     height: 0;
     position: absolute;
-    top: 22px;
+    top: 1.7vmax;
     width: 0;
     z-index: 1;
-    left: 30px;
+    left: 2.3vmax;
     border: medium solid white;
-    border-width: 10px 10px 10px 0;
+    border-width: 0.9vmax 0.9vmax 0.9vmax 0;
     border-color: transparent white transparent transparent;
 }
 
 /* Fix the circle for containers on the right side */
 .right::after {
-    left: -16px;
+    left: -1.25vmax;
 }
 
 /* The actual content */
 .timeline-content {
-    padding: 20px 30px;
+    padding: 1.6vmax 2.3vmax ;
     background-color: #f8f8f8;
     position: relative;
-    border-radius: 6px;
+    border-radius: 1vmin;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
     /* Place the timelime to the left */
     .timeline::after {
-        left: 31px;
+        left: 2.3vmax;
     }
 
     /* Full-width containers */
     .container {
         width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
+        padding-left: 12vmin;
+        padding-right: 4.5vmin;
     }
 
     /* Make sure that all arrows are pointing leftwards */
     .container::before {
-        left: 60px;
+        left: 10.4vmin;
         border: medium solid white;
-        border-width: 10px 10px 10px 0;
+        border-width: 0.9vmax 0.9vmax 0.9vmax 0;
         border-color: transparent white transparent transparent;
     }
 
     /* Make sure all circles are at the same spot */
     .left::after, .right::after {
-        left: 15px;
+        left: 1.2vmax;
     }
 
     /* Make all right containers behave like the left ones */
