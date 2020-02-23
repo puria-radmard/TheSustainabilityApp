@@ -343,3 +343,35 @@ button:hover{
         left: 0%;
     }
 }
+
+
+.page-slideshow {
+    padding: 15px;
+    border-spacing: 25px;
+    table-layout: fixed;
+    margin-left:5%; 
+    margin-right:5%;
+}
+
+.page-slideshow a:link{
+    color:lightblue;
+}
+
+.page-slideshow td:nth-child(1){
+    padding:0 15px;
+    width: 200px;
+}
+
+.page-slideshow td:nth-child(2){
+    padding:0 15px;
+    background-color: #404040;
+    width: 1000px;
+    color: white;
+}
+
+.page-slideshow td:nth-child(2):hover{
+    background-size:  100% 100%;
+    transform:scale(1.05,1.05);
+    transform-origin:center;
+    background-color:#707070;
+}
