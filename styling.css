@@ -195,9 +195,9 @@ button:hover{
 /* Fading animation */
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-duration: 2.5s;
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 2.5s;
 }
 
 @-webkit-keyframes fade {
@@ -300,6 +300,10 @@ button:hover{
     background-color: #f8f8f8;
     position: relative;
     border-radius: 6px;
+}
+
+.timeline-text {
+    color: black;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
