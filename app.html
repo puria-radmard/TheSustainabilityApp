@@ -1,7 +1,8 @@
 <html>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
+
+<script>
     $(document).ready(function(){
       // Add smooth scrolling to all links
       $("a").on('click', function(event) {
@@ -36,6 +37,14 @@
     <head>
         <title>Our App - The Sustainability App</title>
         <link rel="stylesheet" href="styling.css">
+        <link rel="stylesheet" href="flexslider.css" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script src="jquery.flexslider.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            $(window).load(function() {
+                $('.flexslider').flexslider();
+            });
+        </script>
     </head>
 
     <body id='theme'>
@@ -72,6 +81,7 @@
 
             <section>
                 <div>
+<<<<<<< HEAD
                     <svg width= "150vmax" height= "80vmin">
 
                             <rect x="15vmax" y="2vmax" width= "20vmax" height= "70vmin" style = "fill: gray;stroke:pink;stroke-width:5;fill-opacity:1.0;stroke-opacity:0.9"></rect>
@@ -105,12 +115,6 @@
                         <a class="next" onclick="plusSlides(1)">&#10095;</a>
                     </div>
                     <br>
-
-                    <!-- The dots/circles -->
-                    <div style="text-align:center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                    </div>
                 </div>
             </section>
             <section>
@@ -119,14 +123,16 @@
                     <div class="timeline">
                         <div class="container left">
                             <div class="timeline-content">
-                                <h2>2017</h2>
-                                <p>Lorem ipsum..</p>
+                                <h2 class="timeline-text">2017</h2>
+                                <p class="timeline-text">Lorem ipsum..</p>
+                                <img src="ricky_test_pic.jpeg" class="timeline-image">
                             </div>
                         </div>
                         <div class="container right">
                             <div class="timeline-content">
-                                <h2>2016</h2>
-                                <p>Lorem ipsum..</p>
+                                <h2 class="timeline-text">2016</h2>
+                                <p class="timeline-text">Lorem ipsum..</p>
+                                <img src="ricky_test_pic.jpeg" class="timeline-image">
                             </div>
                         </div>
                     </div>
@@ -147,8 +153,6 @@
           </footer>
 
         </div>
-
-        <script src="slides.js"></script>
 
     </body>
 
