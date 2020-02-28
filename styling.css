@@ -10,7 +10,23 @@ body {
       background-color: black;
       color: rgba(200, 200, 200, 1.0);
   }
-  
+
+  /*any link element*/
+  a{
+    text-decoration : none; 
+    color :black;
+    transition-duration:0.4s;
+  }
+  a:hover{
+      color:blue;
+  }
+  .contact a{
+    color :white;
+    transition-duration:0.4s;
+  }
+  .contact a:hover{
+    color:blue;
+  }
   /* Navigation bar */
   .navBar {
       position: fixed; /* always show at the top */
@@ -28,16 +44,12 @@ body {
       vertical-align: middle;
       background-color: rgb(196, 194, 194); /* Gray */
   }
-  a{
-    text-decoration : none; 
-    color :black;
-  }
+
   /* link element inside nav bar */
   .navBar li.link {
       font-size: 3vmin;
       transition-duration:0.4s;
       border: none;
-      color: white;
       text-align: center;
       text-decoration: none;
       margin: 1vmin 0.2vmin;
@@ -58,7 +70,8 @@ body {
       color: rgba(0, 0, 0, 0.1);
       /* background-color: white; */
   }
-  
+
+
   /* Container holding the image and the text */
   .imageContainer {
       position: relative;
@@ -81,10 +94,10 @@ body {
       transform: translate(0%, -50%);
       color: black;
       font-size: 5pc;
-      font-family: 'Courier';
       text-align: center;
       padding-left: 1.5vmax;
       padding-right: 1.5vmax;
+      font: georgia
       /* background-color: red; */
   }
   
@@ -101,26 +114,6 @@ body {
       padding: 3.9vmax;
       border: 0.2vmin red solid;
   }
-  
-  button {
-      background-color: rgb(255, 0, 0); /* Green */
-      border: none;
-      color: white;
-      padding: 1vmax 1.6vmin;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 1.25vmax;
-      margin: 1vmin 0.4vmin;
-      cursor: pointer;
-      border-radius: 1vmax;
-      font: 1em georgia;
-      transition-duration: 0.4s;
-    }
-  
-  button:hover{
-    box-shadow: 0 1vmax 1.25vmax 0 rgba(0,0,0,0.24), 0 1.33vmax 3.9vmax 0 rgba(0,0,0,0.19);
-}
 
 /* Slideshow container */
 .slideshow-container {
