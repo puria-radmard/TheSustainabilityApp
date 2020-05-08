@@ -9,6 +9,3 @@ Zhexuan
 Evonne
 Omar
 Ricky
-
-lil edit
-broo
