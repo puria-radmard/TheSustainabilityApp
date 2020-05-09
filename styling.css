@@ -391,6 +391,8 @@ body {
     background-size: 100% 100%;
     transform:scale(1.05,1.05);
     transform-origin:center;
+    border-radius: 1vmax;
+    box-shadow: 0 1vmax 1vmax 0 rgba(0,0,0,0.24);
     background-color: #9AE1F6;
 }
 
